@@ -16,7 +16,7 @@ Table-1 Student Table
 
 JOINS QUERIES AND OUTPUTS:
 
-INNER JOIN :
+1.INNER JOIN :
 
 SELECT Student.name,Course.Coursename FROM Student INNER JOIN Courses ONStudent.Courseid=Course.Courseid;
 
@@ -26,3 +26,7 @@ OUTPUT:
 |------|------------|
 |Hindu |  Python    |
 |Chandu|  Java      |
+
+2.LEFT JOIN :
+
+SELECT Student.name,Course
