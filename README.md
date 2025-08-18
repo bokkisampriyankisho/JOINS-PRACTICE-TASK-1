@@ -2,6 +2,7 @@
 Table-1 Student Table
 
 QUERIE FOR  CREATING TABLE AND INSERTING VALUES FOR TABLE-1 :
+
 CREATE TABLE Students (
     StudentID INT PRIMARY KEY,
     Name VARCHAR(50),
@@ -9,10 +10,10 @@ CREATE TABLE Students (
 );
 
 INSERT INTO Students (StudentID, Name, CourseID) VALUES
-(1, 'Alice', 101),
-(2, 'Bob', 102),
-(3, 'Charlie', 103),
-(4, 'Diana', NULL);
+(1, 'Hindu', 101),
+(2, 'Chandu', 102),
+(3, 'Yoshi', 103),
+(4, 'Laddu', NULL);
 
 |studentid |  name    | courseid   |
 |----------|----------|------------|
@@ -71,9 +72,9 @@ OUTPUT :
 
 EXPLAINATION: Shows all student,even if their Courseid doesn't match.
 
-3.RIDHT JOIN :
+3.RIGHT JOIN :
 
-Q: SELECT Student.name,Course.Coursename FROM Student ROGHT JOIN Course ON Student.Courseid=Course.Courseid;
+Q: SELECT Student.name,Course.Coursename FROM Student RIGHT JOIN Course ON Student.Courseid=Course.Courseid;
 
 |Name  |Coursename   |
 |------|-------------|
@@ -95,7 +96,7 @@ Q: SELECT Student.name,Course.Coursename FROM Student FULL OUTER JOIN Course ON 
 |Laddu  | NULL        |
 |NULL   | Data Science|
 
-EXPLAINATION: Combines results of LEFT and RIGHT JOIN -all records from both tables.
+EXPLAINATION: Combines results of LEFT and RIGHT JOIN all records from both tables.
 
 
 
