@@ -1,5 +1,5 @@
 # JOINS-PRACTICE-TASK-1
-Table-1 Student Table
+1️⃣Table-1 Student Table
 
 QUERIE FOR  CREATING TABLE AND INSERTING VALUES FOR TABLE-1 :
 
@@ -22,7 +22,7 @@ INSERT INTO Students (StudentID, Name, CourseID) VALUES
 |    3     |   Yoshi  |   103      |
 |    4     |   Laddu  |   NULL     |
 
- Table-2 Course Table
+2️⃣Table-2 Course Table
 
 QUERIE FOR CREATING TABLE AND INSERTING VALUES FOR TABLE-2 :
 
@@ -44,24 +44,24 @@ INSERT INTO Courses (CourseID, CourseName) VALUES
 
 JOINS QUERIES AND OUTPUTS:
 
-1.INNER JOIN :
+🟠1.INNER JOIN :
 
 Q: SELECT Student.name,Course.Coursename FROM Student INNER JOIN Courses ONStudent.Courseid=Course.Courseid;
 
-OUTPUT:
+🟢OUTPUT:
 
 |Name  | Coursename |
 |------|------------|
 |Hindu |  Python    |
 |Chandu|  Java      |
 
-EXPLAINATION: Only matching Courseids between Student and Course are shown.
+✅EXPLAINATION: Only matching Courseids between Student and Course are shown.
 
-2.LEFT JOIN :
+🟣2.LEFT JOIN :
 
 Q: SELECT Student.name,Course.Coursename FROM Student LEFT JOIN Course ON Student.Course.Courseid;
 
-OUTPUT :
+🟢OUTPUT :
 
 |Name  |Coursename |
 |------|-----------|
@@ -70,11 +70,13 @@ OUTPUT :
 |Yoshi | NULL      |
 |Ladddu| NULL      |
 
-EXPLAINATION: Shows all student,even if their Courseid doesn't match.
+✅EXPLAINATION: Shows all student,even if their Courseid doesn't match.
 
-3.RIGHT JOIN :
+🟤3.RIGHT JOIN :
 
 Q: SELECT Student.name,Course.Coursename FROM Student RIGHT JOIN Course ON Student.Courseid=Course.Courseid;
+
+🟢OUTPUT :
 
 |Name  |Coursename   |
 |------|-------------|
@@ -82,11 +84,13 @@ Q: SELECT Student.name,Course.Coursename FROM Student RIGHT JOIN Course ON Stude
 |Chandu| Java        |
 |NULL  | Data Science|
 
-EXPLAINATION: Shows all Course,even those with no studnet.
+✅EXPLAINATION: Shows all Course,even those with no studnet.
 
-4.FULL OUTER JOIN :
+🟡4.FULL OUTER JOIN :
 
 Q: SELECT Student.name,Course.Coursename FROM Student FULL OUTER JOIN Course ON Studnet.Courseid=Course.Courseid;
+
+🟢OUTPUT :
 
 |Name   |Coursename   |
 |-------|-------------|
@@ -96,7 +100,7 @@ Q: SELECT Student.name,Course.Coursename FROM Student FULL OUTER JOIN Course ON 
 |Laddu  | NULL        |
 |NULL   | Data Science|
 
-EXPLAINATION: Combines results of LEFT and RIGHT JOIN all records from both tables.
+✅EXPLAINATION: Combines results of LEFT and RIGHT JOIN all records from both tables.
 
 
 
